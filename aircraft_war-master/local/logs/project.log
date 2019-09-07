@@ -1,0 +1,244 @@
+2019-08-26T08:54:35.303Z - normal: Load ~/.CocosCreator/settings.json
+2019-08-26T08:54:36.405Z - normal: Initializing Asset Database
+2019-08-26T08:54:36.406Z - normal: checking language setting...
+2019-08-26T08:54:36.407Z - normal: Language: zh
+2019-08-26T08:54:36.939Z - success: preview server running at http://localhost:7459
+2019-08-26T08:54:36.940Z - success: protocol editor-framework registered
+2019-08-26T08:54:36.940Z - success: protocol app registered
+2019-08-26T08:54:36.940Z - success: protocol theme registered
+2019-08-26T08:54:36.940Z - success: protocol packages registered
+2019-08-26T08:54:36.940Z - success: protocol uuid registerred
+2019-08-26T08:54:36.940Z - success: protocol db registerred
+2019-08-26T08:54:36.940Z - success: protocol thumbnail registerred
+2019-08-26T08:54:36.940Z - success: protocol unpack registerred
+2019-08-26T08:54:36.940Z - success: protocol disable-commonjs registerred
+2019-08-26T08:54:37.064Z - normal: connected!
+2019-08-26T08:54:37.068Z - normal: Check project C:\Users\xk\Desktop\games-new\aircraft_war-master
+2019-08-26T08:54:37.073Z - normal: Initializing project C:\Users\xk\Desktop\games-new\aircraft_war-master
+2019-08-26T08:54:37.461Z - normal: Initializing Cocos2d
+2019-08-26T08:54:38.472Z - normal: Initializing engine extends
+2019-08-26T08:54:38.486Z - success: asset-db-debugger loaded
+2019-08-26T08:54:38.487Z - success: baidu-adapter loaded
+2019-08-26T08:54:38.488Z - success: color-picker loaded
+2019-08-26T08:54:38.557Z - success: fb-audience-network loaded
+2019-08-26T08:54:38.594Z - success: fb-live-stream loaded
+2019-08-26T08:54:38.597Z - success: google-play-instant loaded
+2019-08-26T08:54:38.601Z - success: huawei-runtime loaded
+2019-08-26T08:54:38.795Z - success: cpk-publish loaded
+2019-08-26T08:54:38.796Z - success: jsb-adapter loaded
+2019-08-26T08:54:38.799Z - success: oppo-runtime loaded
+2019-08-26T08:54:38.801Z - success: package-manager loaded
+2019-08-26T08:54:38.894Z - success: qqplay-adapter loaded
+2019-08-26T08:54:38.896Z - success: runtime-dev-tools loaded
+2019-08-26T08:54:38.898Z - success: sdkbox loaded
+2019-08-26T08:54:38.900Z - success: tester loaded
+2019-08-26T08:54:38.902Z - success: ui-grid loaded
+2019-08-26T08:54:38.904Z - success: ui-kit-preview-extra loaded
+2019-08-26T08:54:38.906Z - success: ui-kit-preview loaded
+2019-08-26T08:54:38.907Z - success: ui-kit loaded
+2019-08-26T08:54:38.908Z - success: ui-tree loaded
+2019-08-26T08:54:38.911Z - success: vivo-runtime loaded
+2019-08-26T08:54:38.911Z - success: weapp-adapter loaded
+2019-08-26T08:54:38.911Z - success: xiaomi-adapter loaded
+2019-08-26T08:54:38.948Z - success: assets loaded
+2019-08-26T08:54:38.950Z - success: builder loaded
+2019-08-26T08:54:39.155Z - success: cocos-services loaded
+2019-08-26T08:54:39.159Z - success: console loaded
+2019-08-26T08:54:39.189Z - success: fb-instant-games loaded
+2019-08-26T08:54:39.191Z - success: game-window loaded
+2019-08-26T08:54:39.192Z - success: google-instant-games loaded
+2019-08-26T08:54:39.195Z - success: hierarchy loaded
+2019-08-26T08:54:39.197Z - success: inspector loaded
+2019-08-26T08:54:39.198Z - success: keystore loaded
+2019-08-26T08:54:39.202Z - success: node-library loaded
+2019-08-26T08:54:39.203Z - success: package-asset loaded
+2019-08-26T08:54:39.204Z - success: preferences loaded
+2019-08-26T08:54:39.205Z - success: project-exporter loaded
+2019-08-26T08:54:39.206Z - success: project-importer loaded
+2019-08-26T08:54:39.208Z - success: project-settings loaded
+2019-08-26T08:54:39.210Z - success: scene loaded
+2019-08-26T08:54:39.211Z - success: simulator-debugger loaded
+2019-08-26T08:54:39.211Z - success: sprite-editor loaded
+2019-08-26T08:54:39.213Z - success: store loaded
+2019-08-26T08:54:39.217Z - success: timeline loaded
+2019-08-26T08:54:39.223Z - success: xiaomi-runtime loaded
+2019-08-26T08:54:40.705Z - info: Cocos Services load base data!
+2019-08-26T08:54:45.214Z - normal: Loading packages
+2019-08-26T08:54:45.218Z - normal: Watching packages
+2019-08-26T08:54:45.610Z - normal: Run Application
+2019-08-26T08:54:58.799Z - warn: Please change the definition of property 'enemyDownClip' in class 'enemy'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    enemyDownClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    enemyDownClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:54:58.813Z - warn: Please change the definition of property 'getUfoClip' in class 'ufo'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    getUfoClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    getUfoClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:54:58.850Z - warn: Please change the definition of property 'gameOverClip' in class 'hero'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    gameOverClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    gameOverClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:54:58.850Z - warn: Please change the definition of property 'useBombClip' in class 'main'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    useBombClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    useBombClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:57:58.670Z - warn: Please change the definition of property 'getUfoClip' in class 'ufo'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    getUfoClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    getUfoClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:57:58.699Z - warn: Please change the definition of property 'gameOverClip' in class 'hero'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    gameOverClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    gameOverClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:57:58.700Z - warn: Please change the definition of property 'useBombClip' in class 'main'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    useBombClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    useBombClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:59:43.691Z - warn: Please change the definition of property 'gameOverClip' in class 'hero'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    gameOverClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    gameOverClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T08:59:43.693Z - warn: Please change the definition of property 'useBombClip' in class 'main'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    useBombClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    useBombClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T09:01:24.099Z - warn: Please change the definition of property 'useBombClip' in class 'main'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    useBombClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    useBombClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-08-26T09:02:15.348Z - warn: Please change the definition of property 'useBombClip' in class 'main'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    useBombClip: cc.Texture2D,
+If you use JS, it should be changed to:
+    useBombClip: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
