@@ -26,12 +26,16 @@ cc.Class({
         audioUtils:{
             type: AudioUtils,
             default: null
+        },
+        scoreDisplay: {
+            default: null,
+            type: cc.Label
         }
     },
 
     // use this for initialization
     onLoad: function () {
-
+        this.scoreCount = 0;
     },
     playEffects: function(effectQueue){
         if(!effectQueue || effectQueue.length <= 0){
@@ -47,6 +51,7 @@ cc.Class({
                     instantEffect = cc.instantiate(this.crushEffect);
                     animation  = instantEffect.getComponent(cc.Animation);
                     animation.play("effect");
+                    this.gainScore();
                     !soundMap["crush" + cmd.playTime] && this.audioUtils.playEliminate(cmd.step);
                     soundMap["crush" + cmd.playTime] = true;
                 }
@@ -54,11 +59,13 @@ cc.Class({
                     instantEffect = cc.instantiate(this.bombWhite);
                     animation  = instantEffect.getComponent(cc.Animation);
                     animation.play("effect_line");
+                    this.gainScore();
                 }
                 else if(cmd.action == "colBomb"){
                     instantEffect = cc.instantiate(this.bombWhite);
                     animation  = instantEffect.getComponent(cc.Animation);
                     animation.play("effect_col");
+                    this.gainScore();
                 }
 
                 instantEffect.x = CELL_WIDTH * (cmd.pos.x - 0.5);
@@ -71,6 +78,11 @@ cc.Class({
             },this);
             this.node.runAction(cc.sequence(delayTime, callFunc));
         },this);
+    },
+    gainScore: function () {
+        this.scoreCount += 1;
+        // 更新 scoreDisplay Label 的文字
+        this.scoreDisplay.string = this.scoreCount;
     },
 
     // called every frame, uncomment this function to activate update callback

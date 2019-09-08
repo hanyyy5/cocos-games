@@ -11,6 +11,7 @@ export default class GameModel {
     }
 
     init(cellTypeNum) {
+        console.log("1111", GRID_WIDTH, GRID_HEIGHT)
         this.cells = [];
         this.setCellTypeNum(cellTypeNum || this.cellTypeNum);
         for (var i = 1; i <= GRID_WIDTH; i++) {
@@ -47,7 +48,7 @@ export default class GameModel {
         let checkWithDirection = function (x, y, direction) {
             let queue = [];
             let vis = [];
-            vis[x + y * 9] = true;
+            vis[x + y * GRID_WIDTH] = true;
             queue.push(cc.v2(x, y));
             let front = 0;
             while (front < queue.length) {
@@ -61,14 +62,14 @@ export default class GameModel {
                 for (let i = 0; i < direction.length; i++) {
                     let tmpX = point.x + direction[i].x;
                     let tmpY = point.y + direction[i].y;
-                    if (tmpX < 1 || tmpX > 9
-                        || tmpY < 1 || tmpY > 9
-                        || vis[tmpX + tmpY * 9]
+                    if (tmpX < 1 || tmpX > GRID_HEIGHT
+                        || tmpY < 1 || tmpY > GRID_WIDTH
+                        || vis[tmpX + tmpY * GRID_WIDTH]
                         || !this.cells[tmpY][tmpX]) {
                         continue;
                     }
                     if (cellModel.type == this.cells[tmpY][tmpX].type) {
-                        vis[tmpX + tmpY * 9] = true;
+                        vis[tmpX + tmpY * GRID_WIDTH] = true;
                         queue.push(cc.v2(tmpX, tmpY));
                     }
                 }
@@ -116,9 +117,9 @@ export default class GameModel {
     }
 
     printInfo() {
-        for (var i = 1; i <= 9; i++) {
+        for (var i = 1; i <= GRID_WIDTH; i++) {
             var printStr = "";
-            for (var j = 1; j <= 9; j++) {
+            for (var j = 1; j <= GRID_HEIGHT; j++) {
                 printStr += this.cells[i][j].type + " ";
             }
             console.log(printStr);
@@ -243,7 +244,7 @@ export default class GameModel {
             for (var j = 1; j <= GRID_HEIGHT; j++) {
                 if (this.cells[i][j] == null) {
                     var curRow = i;
-                    for (var k = curRow; k <= GRID_HEIGHT; k++) {
+                    for (var k = curRow; k <= GRID_WIDTH; k++) {
                         if (this.cells[k][j]) {
                             this.pushToChangeModels(this.cells[k][j]);
                             newCheckPoint.push(this.cells[k][j]);
@@ -255,7 +256,7 @@ export default class GameModel {
                         }
                     }
                     var count = 1;
-                    for (var k = curRow; k <= GRID_HEIGHT; k++) {
+                    for (var k = curRow; k <= GRID_WIDTH; k++) {
                         this.cells[k][j] = new CellModel();
                         this.cells[k][j].init(this.getRandomCellType());
                         this.cells[k][j].setStartXY(j, count + GRID_HEIGHT);

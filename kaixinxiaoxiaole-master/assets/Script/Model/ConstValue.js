@@ -19,11 +19,11 @@ export const CELL_STATUS = {
     BIRD: "bird"
 } 
 
-export const GRID_WIDTH = 9;
-export const GRID_HEIGHT = 9;
+export const GRID_WIDTH = 7;
+export const GRID_HEIGHT = 6;
 
-export const CELL_WIDTH = 70;
-export const CELL_HEIGHT = 70;
+export const CELL_WIDTH = 85;
+export const CELL_HEIGHT = 85;
 
 export const GRID_PIXEL_WIDTH = GRID_WIDTH * CELL_WIDTH;
 export const GRID_PIXEL_HEIGHT = GRID_HEIGHT * CELL_HEIGHT;

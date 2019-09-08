@@ -1,4 +1,4 @@
-import {CELL_WIDTH, CELL_HEIGHT, GRID_PIXEL_WIDTH, GRID_PIXEL_HEIGHT, ANITIME} from '../Model/ConstValue';
+import {GRID_WIDTH, GRID_HEIGHT, CELL_WIDTH, CELL_HEIGHT, GRID_PIXEL_WIDTH, GRID_PIXEL_HEIGHT, ANITIME} from '../Model/ConstValue';
 
 import AudioUtils from "../Utils/AudioUtils";
 
@@ -45,9 +45,9 @@ cc.Class({
 
     initWithCellModels: function(cellsModels){
         this.cellViews = [];
-        for(var i = 1;i<=9;i++){
+        for(var i = 1;i<=GRID_WIDTH;i++){
             this.cellViews[i] = [];
-            for(var j = 1;j<=9;j++){
+            for(var j = 1;j<=GRID_HEIGHT;j++){
                 var type = cellsModels[i][j].type;
                 var aniView = cc.instantiate(this.aniPre[type]);
                 aniView.parent = this.node;
@@ -63,6 +63,7 @@ cc.Class({
                 return true;
             }
             var touchPos = eventTouch.getLocation();
+            // debugger
             var cellPos = this.convertTouchPosToCell(touchPos);
             if(cellPos){
                 var changeModels = this.selectCell(cellPos);
@@ -96,7 +97,7 @@ cc.Class({
     // 根据点击的像素位置，转换成网格中的位置
     convertTouchPosToCell: function(pos){
         pos = this.node.convertToNodeSpace(pos);
-        if(pos.x < 0 || pos.x >= GRID_PIXEL_WIDTH || pos.y < 0 || pos.y >= GRID_PIXEL_HEIGHT){
+        if(pos.x < 0 || pos.x >=GRID_PIXEL_HEIGHT  || pos.y < 0 || pos.y >= GRID_PIXEL_WIDTH){
             return false;
         }
         var x = Math.floor(pos.x / CELL_WIDTH) + 1;
@@ -141,8 +142,8 @@ cc.Class({
     },
     // 显示选中的格子背景
     updateSelect: function(pos){
-         for(var i = 1;i <=9 ;i++){
-            for(var j = 1 ;j <=9 ;j ++){
+         for(var i = 1;i <=GRID_WIDTH ;i++){
+            for(var j = 1 ;j <=GRID_HEIGHT ;j ++){
                 if(this.cellViews[i][j]){
                     var cellScript = this.cellViews[i][j].getComponent("CellView");
                     if(pos.x == j && pos.y ==i){
@@ -161,8 +162,8 @@ cc.Class({
      * 根据cell的model返回对应的view
      */
     findViewByModel: function(model){
-        for(var i = 1;i <=9 ;i++){
-            for(var j = 1 ;j <=9 ;j ++){
+        for(var i = 1;i <=GRID_WIDTH ;i++){
+            for(var j = 1 ;j <=GRID_HEIGHT ;j ++){
                 if(this.cellViews[i][j] && this.cellViews[i][j].getComponent("CellView").model == model){
                     return {view:this.cellViews[i][j],x:j, y:i};
                 }
