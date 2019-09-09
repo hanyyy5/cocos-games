@@ -22,8 +22,8 @@ export const CELL_STATUS = {
 export const GRID_WIDTH = 7;
 export const GRID_HEIGHT = 6;
 
-export const CELL_WIDTH = 83;
-export const CELL_HEIGHT = 83;
+export const CELL_WIDTH = 82.5;
+export const CELL_HEIGHT = 82.5;
 
 export const GRID_PIXEL_WIDTH = GRID_WIDTH * CELL_WIDTH;
 export const GRID_PIXEL_HEIGHT = GRID_HEIGHT * CELL_HEIGHT;

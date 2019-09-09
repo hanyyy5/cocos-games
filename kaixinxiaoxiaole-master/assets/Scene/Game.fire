@@ -343,7 +343,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 0,
+      "y": 3.173,
       "z": 0
     },
     "_scale": {
@@ -424,25 +424,25 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 179,
-      "g": 74,
-      "b": 99,
+      "r": 74,
+      "g": 166,
+      "b": 179,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 500,
-      "height": 586
+      "width": 577,
+      "height": 631
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.04,
+      "y": 0.04
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -253,
-      "y": -340,
+      "x": -243,
+      "y": -339,
       "z": 0
     },
     "_scale": {
@@ -496,13 +496,13 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -0.0017793594306049821,
       "y": 0
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -30,
-      "y": -40,
+      "x": -36.04,
+      "y": -39.867,
       "z": 0
     },
     "_scale": {
@@ -623,8 +623,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 500,
-      "height": 586
+      "width": 561,
+      "height": 634
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -633,8 +633,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -249.714,
-      "y": -339.995,
+      "x": -276,
+      "y": -380,
       "z": 0
     },
     "_scale": {
@@ -991,7 +991,7 @@
     "node": {
       "__id__": 8
     },
-    "_enabled": false,
+    "_enabled": true,
     "_materials": [
       {
         "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
@@ -1001,7 +1001,7 @@
     "_type": 0,
     "_segments": 64,
     "_N$alphaThreshold": 0,
-    "_N$inverted": true,
+    "_N$inverted": false,
     "_id": "0cEHYnOu5HD6bbRuOmNLm8"
   },
   {
@@ -1254,8 +1254,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 320,
-      "y": 568,
+      "x": 424.719,
+      "y": 117.392,
       "z": 0
     },
     "_scale": {
