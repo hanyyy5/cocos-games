@@ -111,6 +111,7 @@ cc.Class({
         }
         else if(flag && this.model.status == CELL_STATUS.COMMON){
             animation.play(CELL_STATUS.CLICK);
+            // animation.play('wrap');
         }
         else if(flag && this.model.status == CELL_STATUS.BIRD){
             animation.play(CELL_STATUS.CLICK);

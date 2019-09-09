@@ -83,7 +83,8 @@ cc.Class({
         this.scoreCount += 1;
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = this.scoreCount;
-    },
+        return this.scoreCount;
+    }
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
