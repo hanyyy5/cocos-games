@@ -37,7 +37,7 @@ cc.Class({
         gridScript.initWithCellModels(this.gameModel.getCells());
 
         //倒计时初始化
-        this.broadcostTimes = 600;
+        this.broadcostTimes = 120;
         this.schedule(this.doCountdownTime,1);
     },
 
