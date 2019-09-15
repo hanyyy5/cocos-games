@@ -1,0 +1,174 @@
+2019-09-14T14:14:23.609Z - normal: Load ~/.CocosCreator/settings.json
+2019-09-14T14:14:23.660Z - normal: Initializing Asset Database
+2019-09-14T14:14:23.663Z - normal: checking language setting...
+2019-09-14T14:14:23.663Z - normal: Language: zh
+2019-09-14T14:14:24.268Z - success: preview server running at http://localhost:7456
+2019-09-14T14:14:24.299Z - success: protocol editor-framework registered
+2019-09-14T14:14:24.299Z - success: protocol app registered
+2019-09-14T14:14:24.299Z - success: protocol theme registered
+2019-09-14T14:14:24.299Z - success: protocol packages registered
+2019-09-14T14:14:24.300Z - success: protocol uuid registerred
+2019-09-14T14:14:24.300Z - success: protocol db registerred
+2019-09-14T14:14:24.300Z - success: protocol thumbnail registerred
+2019-09-14T14:14:24.300Z - success: protocol unpack registerred
+2019-09-14T14:14:24.300Z - success: protocol disable-commonjs registerred
+2019-09-14T14:14:24.448Z - normal: connected!
+2019-09-14T14:14:24.449Z - normal: Check project /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master
+2019-09-14T14:14:24.457Z - normal: Initializing project /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master
+2019-09-14T14:14:24.767Z - normal: Initializing Cocos2d
+2019-09-14T14:14:25.281Z - normal: Initializing engine extends
+2019-09-14T14:14:25.329Z - success: asset-db-debugger loaded
+2019-09-14T14:14:25.334Z - success: baidu-adapter loaded
+2019-09-14T14:14:25.343Z - success: color-picker loaded
+2019-09-14T14:14:25.423Z - success: fb-audience-network loaded
+2019-09-14T14:14:25.467Z - success: fb-live-stream loaded
+2019-09-14T14:14:25.470Z - success: google-play-instant loaded
+2019-09-14T14:14:25.474Z - success: huawei-runtime loaded
+2019-09-14T14:14:25.666Z - success: cpk-publish loaded
+2019-09-14T14:14:25.667Z - success: jsb-adapter loaded
+2019-09-14T14:14:25.670Z - success: oppo-runtime loaded
+2019-09-14T14:14:25.678Z - success: package-manager loaded
+2019-09-14T14:14:25.780Z - success: qqplay-adapter loaded
+2019-09-14T14:14:25.782Z - success: runtime-dev-tools loaded
+2019-09-14T14:14:25.790Z - success: sdkbox loaded
+2019-09-14T14:14:25.799Z - success: tester loaded
+2019-09-14T14:14:25.807Z - success: ui-grid loaded
+2019-09-14T14:14:25.815Z - success: ui-kit-preview-extra loaded
+2019-09-14T14:14:25.823Z - success: ui-kit-preview loaded
+2019-09-14T14:14:25.832Z - success: ui-kit loaded
+2019-09-14T14:14:25.840Z - success: ui-tree loaded
+2019-09-14T14:14:25.843Z - success: vivo-runtime loaded
+2019-09-14T14:14:25.844Z - success: weapp-adapter loaded
+2019-09-14T14:14:25.844Z - success: xiaomi-adapter loaded
+2019-09-14T14:14:25.887Z - success: assets loaded
+2019-09-14T14:14:25.896Z - success: builder loaded
+2019-09-14T14:14:26.092Z - success: cocos-services loaded
+2019-09-14T14:14:26.103Z - success: console loaded
+2019-09-14T14:14:26.132Z - success: fb-instant-games loaded
+2019-09-14T14:14:26.141Z - success: game-window loaded
+2019-09-14T14:14:26.142Z - success: google-instant-games loaded
+2019-09-14T14:14:26.151Z - success: hierarchy loaded
+2019-09-14T14:14:26.159Z - success: inspector loaded
+2019-09-14T14:14:26.160Z - success: keystore loaded
+2019-09-14T14:14:26.172Z - success: node-library loaded
+2019-09-14T14:14:26.174Z - success: package-asset loaded
+2019-09-14T14:14:26.175Z - success: preferences loaded
+2019-09-14T14:14:26.184Z - success: project-exporter loaded
+2019-09-14T14:14:26.192Z - success: project-importer loaded
+2019-09-14T14:14:26.202Z - success: project-settings loaded
+2019-09-14T14:14:26.218Z - success: scene loaded
+2019-09-14T14:14:26.219Z - success: simulator-debugger loaded
+2019-09-14T14:14:26.221Z - success: sprite-editor loaded
+2019-09-14T14:14:26.231Z - success: store loaded
+2019-09-14T14:14:26.243Z - success: timeline loaded
+2019-09-14T14:14:26.249Z - success: xiaomi-runtime loaded
+2019-09-14T14:14:27.382Z - info: Cocos Services load base data!
+2019-09-14T14:14:32.125Z - normal: Loading packages
+2019-09-14T14:14:32.132Z - normal: Watching packages
+2019-09-14T14:14:32.243Z - normal: Run Application
+2019-09-14T14:14:36.843Z - failed: load script [landMaker] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-14T14:14:36.843Z - failed: load script [/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-14T14:14:36.912Z - warn: Script attached to "New Button" in scene "MainGameScene.fire" is missing or invalid. Detailed information:
+Node path: "GameOver/New Button"
+Asset url: "db://assets/StickHero/MainGameScene.fire"
+Script UUID: "2da0d053-47db-4312-80ca-6bc0ac84d5f8"
+Class ID: "2da0dBTR9tDEoDKa8CshNX4"
+
+2019-09-15T09:51:47.889Z - failed: load script [landMaker] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-15T09:51:47.895Z - failed: load script [/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-15T12:49:28.838Z - warn: Script attached to "New Button" in scene "MainGameScene.fire" is missing or invalid. Detailed information:
+Node path: "GameOver/New Button"
+Asset url: "db://assets/StickHero/MainGameScene.fire"
+Script UUID: "2da0d053-47db-4312-80ca-6bc0ac84d5f8"
+Class ID: "2da0dBTR9tDEoDKa8CshNX4"
+
+2019-09-15T12:50:30.841Z - failed: load script [landMaker] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-15T12:50:30.842Z - failed: load script [/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-15T12:55:47.179Z - failed: load script [landMaker] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-15T12:55:47.182Z - failed: load script [/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js] failed : ReferenceError: StateMachine is not defined
+    at __define (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:10:15)
+    at /Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:257:13
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:264:11)
+    at Object.<anonymous> (/Users/yuhan/Desktop/games-from-git/cocos-games/StickHero-master/temp/quick-scripts/assets/StickHero/Scripts/landMaker.js:267:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2019-09-15T12:56:35.517Z - warn: Script attached to "New Button" in scene "MainGameScene.fire" is missing or invalid. Detailed information:
+Node path: "GameOver/New Button"
+Asset url: "db://assets/StickHero/MainGameScene.fire"
+Script UUID: "2da0d053-47db-4312-80ca-6bc0ac84d5f8"
+Class ID: "2da0dBTR9tDEoDKa8CshNX4"
+

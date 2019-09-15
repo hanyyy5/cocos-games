@@ -20,10 +20,10 @@ cc.Class({
 
     },
 
-    // buttonClicked(){
-    //     fsm.restart();
-    // },
-    // gameStart(){
-    //     cc.director.loadScene("MainGameScene");
-    // }
+    buttonClicked(){
+        fsm.restart();
+    },
+    gameStart(){
+        cc.director.loadScene("MainGameScene");
+    }
 });

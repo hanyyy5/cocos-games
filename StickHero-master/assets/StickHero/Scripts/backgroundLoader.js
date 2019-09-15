@@ -8,6 +8,7 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         var randomNum = "bg" + ((Math.random()*100|0)%3+1);
+        var randomNum = "mainBg";
         var bgSprite = this.node.getComponent(cc.Sprite);
         cc.loader.loadRes("hero/"+randomNum, cc.SpriteFrame, (err, SpriteFrame) => {
             bgSprite.spriteFrame = SpriteFrame;

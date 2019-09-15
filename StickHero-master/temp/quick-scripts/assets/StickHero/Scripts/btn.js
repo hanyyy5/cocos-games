@@ -22,14 +22,14 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function onLoad() {}
+    onLoad: function onLoad() {},
 
-    // buttonClicked(){
-    //     fsm.restart();
-    // },
-    // gameStart(){
-    //     cc.director.loadScene("MainGameScene");
-    // }
+    buttonClicked: function buttonClicked() {
+        fsm.restart();
+    },
+    gameStart: function gameStart() {
+        cc.director.loadScene("MainGameScene");
+    }
 });
 
 cc._RF.pop();
