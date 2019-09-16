@@ -1,7 +1,7 @@
 {
   "9836134e-b892-4283-b6b2-78b5acf3ed45": {
-    "asset": 1566782161505,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "effects"
   },
   "430eccbf-bf2c-4e6e-8c0c-884bbb487f32": {
@@ -25,8 +25,8 @@
     "relativePath": "effects\\builtin-phong.effect"
   },
   "f8e6b000-5643-4b86-9080-aa680ce1f599": {
-    "asset": 1566782161581,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "image"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
@@ -120,8 +120,8 @@
     "relativePath": "image\\default_toggle_normal.png"
   },
   "5c3eedba-6c41-4c0c-9ba7-d91f813cbd1c": {
-    "asset": 1566782161588,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "materials"
   },
   "c4480a0a-6ac5-443f-8b40-361a14257fc8": {
@@ -130,8 +130,8 @@
     "relativePath": "materials\\builtin-phong.mtl"
   },
   "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
-    "asset": 1566782161595,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "misc"
   },
   "2be36297-9abb-4fee-8049-9ed5e271da8a": {
@@ -140,8 +140,8 @@
     "relativePath": "misc\\default_video.mp4"
   },
   "db019bf7-f71c-4111-98cf-918ea180cb48": {
-    "asset": 1566782161635,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "model"
   },
   "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
@@ -150,9 +150,9 @@
     "relativePath": "image\\default_toggle_pressed.png"
   },
   "e39e96e6-6f6e-413f-bcf1-ac7679bb648a": {
-    "asset": 1566782161628,
-    "meta": 1563274076000,
-    "relativePath": "model\\prefab"
+    "asset": 1563609860000,
+    "meta": 1563609860000,
+    "relativePath": "model/prefab"
   },
   "a87cc147-01b2-43f8-8e42-a7ca90b0c757": {
     "asset": 1563274076000,
@@ -195,8 +195,8 @@
     "relativePath": "model\\prefab\\torus.prefab"
   },
   "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
-    "asset": 1566782161645,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "obsolete"
   },
   "8a96b965-2dc0-4e03-aa90-3b79cb93b5b4": {
@@ -205,8 +205,8 @@
     "relativePath": "obsolete\\atom.png"
   },
   "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
-    "asset": 1566782161656,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "particle"
   },
   "b8223619-7e38-47c4-841f-9160c232495a": {
@@ -225,8 +225,8 @@
     "relativePath": "particle\\atom.png"
   },
   "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
-    "asset": 1566782161740,
-    "meta": 1563274076000,
+    "asset": 1563609860000,
+    "meta": 1563609860000,
     "relativePath": "prefab"
   },
   "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
