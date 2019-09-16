@@ -86,7 +86,11 @@ var fsm = new StateMachine({
             gameDirector.stickAndHeroDownAction(callFunc);
         },
         onGameOver: function onGameOver() {
-            gameDirector.overLabel.node.active = true;
+            // gameDirector.overLabel.node.active = true;
+            cc.director.preloadScene("GameoverScene", function () {
+                cc.sys.localStorage.setItem("score", gameDirector.getScore());
+                cc.director.loadScene("GameoverScene");
+            }.bind(this));
         },
         onRestart: function onRestart() {
             cc.director.loadScene("MainGameScene");
@@ -233,6 +237,7 @@ cc.Class({
             this.changeHightestScoreLabel();
         }
         this.scoreLabel.string = "得分:" + this.score;
+        return this.score;
     },
     changeHightestScoreLabel: function changeHightestScoreLabel() {
         this.hightestScoreLabel.string = "最高分:" + storageManager.getHighestScore();
