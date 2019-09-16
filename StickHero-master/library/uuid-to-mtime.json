@@ -1155,7 +1155,7 @@
     "relativePath": "resources"
   },
   "d0202a85-a76c-49f8-ad84-61799495bdc9": {
-    "asset": 1568619091356,
+    "asset": 1568627825368,
     "meta": 1568619091342,
     "relativePath": "resources\\hero"
   },
@@ -1221,7 +1221,7 @@
   },
   "b6a17d1e-21ac-4dab-ac27-9071a083fe5d": {
     "asset": 1568619091356,
-    "meta": 1568619104143,
+    "meta": 1568623008965,
     "relativePath": "resources\\hero\\startBtn.png"
   },
   "1bca2533-8e67-4c81-84c3-da0641dfa150": {
@@ -1240,8 +1240,8 @@
     "relativePath": "StickHero\\GameoverScene.fire"
   },
   "012f6749-ad8d-48cf-aa38-dae28d3bfd1a": {
-    "asset": 1568619091189,
-    "meta": 1568619104150,
+    "asset": 1568632689947,
+    "meta": 1568632689963,
     "relativePath": "StickHero\\MainGameScene.fire"
   },
   "20a8a17c-9f63-4eb2-bc34-d580e1857b71": {
@@ -1274,11 +1274,6 @@
     "meta": 1568619104460,
     "relativePath": "StickHero\\Scripts\\Lib\\state-machine.js"
   },
-  "68d3c98a-411c-4cc4-9c0c-e4c7ea66b3e1": {
-    "asset": 1568619091193,
-    "meta": 1568619104490,
-    "relativePath": "StickHero\\Scripts\\perfectLabel.js"
-  },
   "82fd1301-c9a8-476d-b6ca-b1f0827488f5": {
     "asset": 1568619091194,
     "meta": 1568619104500,
@@ -1295,8 +1290,8 @@
     "relativePath": "StickHero\\startButton_anim.anim"
   },
   "203bd4eb-e251-48cf-9bb5-5d5ab81cc24b": {
-    "asset": 1568619091195,
-    "meta": 1568619104503,
+    "asset": 1568622463476,
+    "meta": 1568622463487,
     "relativePath": "StickHero\\StartScene.fire"
   },
   "63dddef5-591f-406d-8e75-57a4c73dc0f1": {
@@ -1314,19 +1309,39 @@
     "meta": 1568619104134,
     "relativePath": "resources\\hero\\mainBg.png"
   },
+  "4beb5ba7-a474-402f-9a3d-04c54d1cfe7d": {
+    "asset": 1568623365196,
+    "meta": 1568623365229,
+    "relativePath": "resources\\hero\\land.png"
+  },
   "4ebd4e9e-9820-458d-8ad6-596fc0a77d3a": {
-    "asset": 1568619091192,
-    "meta": 1568619104446,
+    "asset": 1568626656377,
+    "meta": 1568626665462,
     "relativePath": "StickHero\\Scripts\\gameOver.js"
   },
+  "fbc0017f-57f4-42b2-aafa-bc03cb9c6fa3": {
+    "asset": 1568630367947,
+    "meta": 1568630367974,
+    "relativePath": "resources\\hero\\land0.png"
+  },
+  "600ffb76-0b33-4ff3-95cd-ee8dbf174b16": {
+    "asset": 1568631705037,
+    "meta": 1568631705053,
+    "relativePath": "resources\\hero\\stick.png"
+  },
   "4310c78e-46eb-450a-b504-0694e8cae4dd": {
-    "asset": 1568619091193,
-    "meta": 1568619104496,
+    "asset": 1568633705091,
+    "meta": 1568633712070,
     "relativePath": "StickHero\\Scripts\\spriteCreator.js"
   },
   "d00790ca-ae20-4d97-af77-8e81121472f2": {
-    "asset": 1568619195100,
-    "meta": 1568619198729,
+    "asset": 1568633955574,
+    "meta": 1568633964842,
     "relativePath": "StickHero\\Scripts\\landMaker.js"
+  },
+  "68d3c98a-411c-4cc4-9c0c-e4c7ea66b3e1": {
+    "asset": 1568634114695,
+    "meta": 1568634122736,
+    "relativePath": "StickHero\\Scripts\\perfectLabel.js"
   }
 }

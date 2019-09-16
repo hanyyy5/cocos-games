@@ -13,7 +13,6 @@ cc._RF.push(module, '4ebd46emCBFjYrWWW/Ap306', 'gameOver', __filename);
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var fsm = require("landMaker");
 cc.Class({
     extends: cc.Component,
 
@@ -52,11 +51,7 @@ cc.Class({
             this.scoreEarnLabel.string = 4;
         }
         this.continueBtn.on("touchstart", function () {
-            fsm.restart();
-            // cc.director.preloadScene("GameoverScene", function () {
-            //     cc.sys.localStorage.setItem("score",  gameDirector.getScore());
-            //     cc.director.loadScene("GameoverScene");
-            // }.bind(this));
+            cc.director.loadScene("MainGameScene");
         });
         this.logoutBtn.on("touchstart", function () {
             window.history.go(-1);

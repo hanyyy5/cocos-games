@@ -7,96 +7,7 @@ cc._RF.push(module, 'd0079DKriBNl693joESFHLy', 'landMaker');
 var spriteCreator = require("spriteCreator");
 var perfectLabel = require("perfectLabel");
 var storageManager = require("storageManager");
-var fsm = new StateMachine({
-    data: {
-        gameDirector: null
-    },
-    init: 'stand',
-    transitions: [{ name: 'stickLengthen', from: 'stand', to: 'stickLengthened' }, { name: 'heroTick', from: 'stickLengthened', to: 'heroTicked' }, { name: 'stickFall', from: 'heroTicked', to: 'stickFalled' }, { name: 'heroMoveToLand', from: 'stickFalled', to: 'heroMovedToLand' }, { name: 'landMove', from: 'heroMovedToLand', to: 'stand' }, { name: 'heroMoveToStickEnd', from: 'stickFalled', to: 'heroMovedToStickEnd' }, { name: 'heroDown', from: 'heroMovedToStickEnd', to: 'heroDowned' }, { name: 'gameOver', from: 'heroDowned', to: 'end' }, { name: 'restart', from: 'end', to: 'stand' }],
-    methods: {
-        onLeaveHeroTicked: function onLeaveHeroTicked() {
-            gameDirector.unregisterEvent();
-        },
-        onStickLengthen: function onStickLengthen() {
-            gameDirector.stickLengthen = true;
-            gameDirector.stick = gameDirector.createStick();
-            gameDirector.stick.x = gameDirector.hero.x + gameDirector.hero.width * (1 - gameDirector.hero.anchorX) + gameDirector.stick.width * gameDirector.stick.anchorX;
-            var ani = gameDirector.hero.getComponent(cc.Animation);
-            ani.play('heroPush');
-        },
-        onHeroTick: function onHeroTick() {
-            gameDirector.stickLengthen = false;
-            var ani = gameDirector.hero.getComponent(cc.Animation);
-            ani.play('heroTick');
-        },
-        onStickFall: function onStickFall() {
-            //stick fall action.
-            var stickFall = cc.rotateBy(0.5, 90);
-            stickFall.easing(cc.easeIn(3));
-            var callFunc = cc.callFunc(function () {
-                var stickLength = gameDirector.stick.height - gameDirector.stick.width * gameDirector.stick.anchorX;
-                if (stickLength < gameDirector.currentLandRange || stickLength > gameDirector.currentLandRange + gameDirector.secondLand.width) {
-                    //failed.
-                    fsm.heroMoveToStickEnd();
-                } else {
-                    //successed
-                    fsm.heroMoveToLand();
-                    if (stickLength > gameDirector.currentLandRange + gameDirector.secondLand.width / 2 - 5 && stickLength < gameDirector.currentLandRange + gameDirector.secondLand.width / 2 + 5) {
-                        gameDirector.perfect++;
-                        gameDirector.getScore(gameDirector.perfect);
-                        var pl = gameDirector.perfectLabel.getComponent(perfectLabel);
-                        pl.showPerfect(gameDirector.perfect);
-                    } else {
-                        gameDirector.perfect = 0;
-                    }
-                }
-            });
-            var se = cc.sequence(stickFall, callFunc);
-            gameDirector.stick.runAction(se);
-        },
-        onHeroMoveToLand: function onHeroMoveToLand() {
-            var ani = gameDirector.hero.getComponent(cc.Animation);
-            var callFunc = cc.callFunc(function () {
-                ani.stop('heroRun');
-                gameDirector.getScore();
-                fsm.landMove();
-            });
-            ani.play('heroRun');
-            gameDirector.heroMove(gameDirector.hero, { length: gameDirector.currentLandRange + gameDirector.secondLand.width, callFunc: callFunc });
-        },
-        onLandMove: function onLandMove() {
-            var callFunc = cc.callFunc(function () {
-                gameDirector.registerEvent();
-            });
-            gameDirector.landCreateAndMove(callFunc);
-        },
-        onHeroMoveToStickEnd: function onHeroMoveToStickEnd() {
-            var ani = gameDirector.hero.getComponent(cc.Animation);
-            var callFunc = cc.callFunc(function () {
-                ani.stop('heroRun');
-                fsm.heroDown();
-            });
-            ani.play('heroRun');
-            gameDirector.heroMove(gameDirector.hero, { length: gameDirector.stick.height, callFunc: callFunc });
-        },
-        onHeroDown: function onHeroDown() {
-            var callFunc = cc.callFunc(function () {
-                fsm.gameOver();
-            });
-            gameDirector.stickAndHeroDownAction(callFunc);
-        },
-        onGameOver: function onGameOver() {
-            // gameDirector.overLabel.node.active = true;
-            cc.director.preloadScene("GameoverScene", function () {
-                cc.sys.localStorage.setItem("score", gameDirector.getScore());
-                cc.director.loadScene("GameoverScene");
-            }.bind(this));
-        },
-        onRestart: function onRestart() {
-            cc.director.loadScene("MainGameScene");
-        }
-    }
-});
+var fsm;
 var gameDirector = null;
 cc.Class({
     extends: cc.Component,
@@ -111,7 +22,7 @@ cc.Class({
         heroMoveSpeed: 400,
         // stick:cc.Node,
         // stickLengthen:false,
-        stickWidth: 6,
+        stickWidth: 14,
         canvas: cc.Node,
         scoreLabel: cc.Label,
         hightestScoreLabel: cc.Label,
@@ -119,6 +30,96 @@ cc.Class({
         perfectLabel: cc.Node
     },
     onLoad: function onLoad() {
+        fsm = new StateMachine({
+            data: {
+                gameDirector: null
+            },
+            init: 'stand',
+            transitions: [{ name: 'stickLengthen', from: 'stand', to: 'stickLengthened' }, { name: 'heroTick', from: 'stickLengthened', to: 'heroTicked' }, { name: 'stickFall', from: 'heroTicked', to: 'stickFalled' }, { name: 'heroMoveToLand', from: 'stickFalled', to: 'heroMovedToLand' }, { name: 'landMove', from: 'heroMovedToLand', to: 'stand' }, { name: 'heroMoveToStickEnd', from: 'stickFalled', to: 'heroMovedToStickEnd' }, { name: 'heroDown', from: 'heroMovedToStickEnd', to: 'heroDowned' }, { name: 'gameOver', from: 'heroDowned', to: 'end' }, { name: 'restart', from: 'end', to: 'stand' }],
+            methods: {
+                onLeaveHeroTicked: function onLeaveHeroTicked() {
+                    gameDirector.unregisterEvent();
+                },
+                onStickLengthen: function onStickLengthen() {
+                    gameDirector.stickLengthen = true;
+                    gameDirector.stick = gameDirector.createStick();
+                    gameDirector.stick.x = gameDirector.hero.x + gameDirector.hero.width * (1 - gameDirector.hero.anchorX) + gameDirector.stick.width * gameDirector.stick.anchorX;
+                    var ani = gameDirector.hero.getComponent(cc.Animation);
+                    ani.play('heroPush');
+                },
+                onHeroTick: function onHeroTick() {
+                    gameDirector.stickLengthen = false;
+                    var ani = gameDirector.hero.getComponent(cc.Animation);
+                    ani.play('heroTick');
+                },
+                onStickFall: function onStickFall() {
+                    //stick fall action.
+                    var stickFall = cc.rotateBy(0.5, 90);
+                    stickFall.easing(cc.easeIn(3));
+                    var callFunc = cc.callFunc(function () {
+                        var stickLength = gameDirector.stick.height - gameDirector.stick.width * gameDirector.stick.anchorX;
+                        if (stickLength < gameDirector.currentLandRange || stickLength > gameDirector.currentLandRange + gameDirector.secondLand.width) {
+                            //failed.
+                            fsm.heroMoveToStickEnd();
+                        } else {
+                            //successed
+                            fsm.heroMoveToLand();
+                            if (stickLength > gameDirector.currentLandRange + gameDirector.secondLand.width / 2 - 5 && stickLength < gameDirector.currentLandRange + gameDirector.secondLand.width / 2 + 5) {
+                                gameDirector.perfect++;
+                                gameDirector.getScore(gameDirector.perfect);
+                                var pl = gameDirector.perfectLabel.getComponent(perfectLabel);
+                                pl.showPerfect(gameDirector.perfect);
+                            } else {
+                                gameDirector.perfect = 0;
+                            }
+                        }
+                    });
+                    var se = cc.sequence(stickFall, callFunc);
+                    gameDirector.stick.runAction(se);
+                },
+                onHeroMoveToLand: function onHeroMoveToLand() {
+                    var ani = gameDirector.hero.getComponent(cc.Animation);
+                    var callFunc = cc.callFunc(function () {
+                        ani.stop('heroRun');
+                        gameDirector.getScore();
+                        fsm.landMove();
+                    });
+                    ani.play('heroRun');
+                    gameDirector.heroMove(gameDirector.hero, { length: gameDirector.currentLandRange + gameDirector.secondLand.width, callFunc: callFunc });
+                },
+                onLandMove: function onLandMove() {
+                    var callFunc = cc.callFunc(function () {
+                        gameDirector.registerEvent();
+                    });
+                    gameDirector.landCreateAndMove(callFunc);
+                },
+                onHeroMoveToStickEnd: function onHeroMoveToStickEnd() {
+                    var ani = gameDirector.hero.getComponent(cc.Animation);
+                    var callFunc = cc.callFunc(function () {
+                        ani.stop('heroRun');
+                        fsm.heroDown();
+                    });
+                    ani.play('heroRun');
+                    gameDirector.heroMove(gameDirector.hero, { length: gameDirector.stick.height, callFunc: callFunc });
+                },
+                onHeroDown: function onHeroDown() {
+                    var callFunc = cc.callFunc(function () {
+                        fsm.gameOver();
+                    });
+                    gameDirector.stickAndHeroDownAction(callFunc);
+                },
+                onGameOver: function onGameOver() {
+                    // gameDirector.overLabel.node.active = true;
+                    cc.director.preloadScene("GameoverScene", function () {
+                        cc.sys.localStorage.setItem("score", gameDirector.getScore());
+                        cc.director.loadScene("GameoverScene");
+                    }.bind(this));
+                },
+                onRestart: function onRestart() {
+                    cc.director.loadScene("MainGameScene");
+                }
+            }
+        });
         //init data
         // alert(storageManager.getHighestScore());
         gameDirector = this;
@@ -223,7 +224,9 @@ cc.Class({
         return stick;
     },
     createNewLand: function createNewLand() {
+        debugger;
         this.secondLand = spriteCreator.createNewLand(this.getLandWidth());
+        console.log("secondLand", this.secondLand.getComponent(cc.Sprite));
         this.secondLand.parent = this.node;
     },
     getScore: function getScore(num) {
@@ -236,7 +239,7 @@ cc.Class({
             storageManager.setHighestScore(this.score);
             this.changeHightestScoreLabel();
         }
-        this.scoreLabel.string = "得分:" + this.score;
+        this.scoreLabel.string = this.score;
         return this.score;
     },
     changeHightestScoreLabel: function changeHightestScoreLabel() {

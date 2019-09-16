@@ -20,7 +20,7 @@ cc.Class({
         var moveAction = cc.moveBy(1, cc.p(0, 0));
         var fadeOutAction = cc.fadeOut(0);
         var seq = cc.sequence(fadeInAction, moveAction, fadeOutAction);
-        this.node.runAction(seq);
+        // this.node.runAction(seq);
         //has bug.  web will 花屏...
         // this.anim.play("perfect_anim");
     },
