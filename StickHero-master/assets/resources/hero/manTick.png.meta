@@ -1,16 +1,16 @@
 {
   "ver": "2.3.1",
-  "uuid": "1bca2533-8e67-4c81-84c3-da0641dfa150",
+  "uuid": "e5423256-4428-404e-a0d3-1f829f1b95b0",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
   "platformSettings": {},
   "subMetas": {
-    "tick": {
+    "manTick": {
       "ver": "1.0.4",
-      "uuid": "63dd3ec4-30f7-45dd-a28f-3e16d2d33367",
-      "rawTextureUuid": "1bca2533-8e67-4c81-84c3-da0641dfa150",
+      "uuid": "90e12948-d594-450b-94b1-55504eb41a65",
+      "rawTextureUuid": "e5423256-4428-404e-a0d3-1f829f1b95b0",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

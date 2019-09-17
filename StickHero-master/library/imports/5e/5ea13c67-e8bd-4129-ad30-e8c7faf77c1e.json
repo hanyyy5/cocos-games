@@ -1,10 +1,10 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "heroTick",
+  "_name": "heroTick0",
   "_objFlags": 0,
-  "_native": "",
-  "_duration": 0.18333333333333332,
-  "sample": 60,
+  "_rawFiles": null,
+  "_duration": 0.3333333333333333,
+  "sample": 30,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
@@ -14,19 +14,19 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "569c3be2-af38-45fb-b40a-bb1cdad1a219"
+              "__uuid__": "bb6469f0-6339-4ca8-8744-74211f590860"
             }
           },
           {
             "frame": 0.1,
             "value": {
-              "__uuid__": "90e12948-d594-450b-94b1-55504eb41a65"
+              "__uuid__": "63dd3ec4-30f7-45dd-a28f-3e16d2d33367"
             }
           },
           {
-            "frame": 0.16666666666666666,
+            "frame": 0.3,
             "value": {
-              "__uuid__": "569c3be2-af38-45fb-b40a-bb1cdad1a219"
+              "__uuid__": "bb6469f0-6339-4ca8-8744-74211f590860"
             }
           }
         ]

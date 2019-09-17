@@ -419,16 +419,6 @@
     "meta": 1568619103332,
     "relativePath": "model\\primitives.fbx"
   },
-  "81e4b8dd-4d1c-471a-a2eb-7b1a4bfe8c00": {
-    "asset": 1568687616661,
-    "meta": 1568687628983,
-    "relativePath": "heroPush.anim"
-  },
-  "ab3ae5d9-3703-40be-a3cf-87d36a4f6029": {
-    "asset": 1568687616663,
-    "meta": 1568687628984,
-    "relativePath": "heroRun.anim"
-  },
   "61fc670d-48c4-4f58-8b8c-33b7682974a7": {
     "asset": 1568687616577,
     "meta": 1568687616576,
@@ -443,11 +433,6 @@
     "asset": 1568687616610,
     "meta": 1568687628986,
     "relativePath": "MyTest\\Lib\\state-machine.js"
-  },
-  "510d7b72-47d0-4c89-944b-b083e2bae766": {
-    "asset": 1568687616664,
-    "meta": 1568687628987,
-    "relativePath": "heroTick.anim"
   },
   "edd58aec-0cf0-4987-a716-c02424554b43": {
     "asset": 1568687617367,
@@ -1224,24 +1209,19 @@
     "meta": 1568687629812,
     "relativePath": "resources\\hero\\startBtn.png"
   },
-  "1bca2533-8e67-4c81-84c3-da0641dfa150": {
-    "asset": 1568687618427,
-    "meta": 1568687629836,
-    "relativePath": "resources\\hero\\tick.png"
-  },
   "36cdbc71-4324-4bdf-8fac-5fb0a68ef45e": {
     "asset": 1568687616660,
     "meta": 1568687616611,
     "relativePath": "StickHero"
   },
   "ac37e03a-372b-4a45-8f6e-a2ef61155e45": {
-    "asset": 1568687616635,
-    "meta": 1568687629838,
+    "asset": 1568709358518,
+    "meta": 1568709358524,
     "relativePath": "StickHero\\GameoverScene.fire"
   },
   "012f6749-ad8d-48cf-aa38-dae28d3bfd1a": {
-    "asset": 1568689470150,
-    "meta": 1568689470174,
+    "asset": 1568709354999,
+    "meta": 1568709355018,
     "relativePath": "StickHero\\MainGameScene.fire"
   },
   "20a8a17c-9f63-4eb2-bc34-d580e1857b71": {
@@ -1334,14 +1314,54 @@
     "meta": 1568687630163,
     "relativePath": "StickHero\\Scripts\\perfectLabel.js"
   },
+  "1e74c9f5-3799-4d02-8ded-7a5732b683e1": {
+    "asset": 1568694743059,
+    "meta": 1568696108097,
+    "relativePath": "heroPush.anim"
+  },
+  "c566455e-5ab5-4bcb-a3b8-e1256730e674": {
+    "asset": 1568687616661,
+    "meta": 1568696108100,
+    "relativePath": "heroPush0.anim"
+  },
+  "8b7ef6a8-9a8d-4b9b-8f8b-30295276b42a": {
+    "asset": 1568708921782,
+    "meta": 1568708921815,
+    "relativePath": "heroRun.anim"
+  },
+  "fb7fbc4e-4d1d-4a88-a527-f5aace5a9206": {
+    "asset": 1568687616663,
+    "meta": 1568696108103,
+    "relativePath": "heroRun0.anim"
+  },
+  "5fd987fe-eb49-4511-a503-5e0b30fd76d7": {
+    "asset": 1568709209775,
+    "meta": 1568709209792,
+    "relativePath": "heroTick.anim"
+  },
+  "5ea13c67-e8bd-4129-ad30-e8c7faf77c1e": {
+    "asset": 1568687616664,
+    "meta": 1568696108107,
+    "relativePath": "heroTick0.anim"
+  },
   "4310c78e-46eb-450a-b504-0694e8cae4dd": {
-    "asset": 1568688469597,
-    "meta": 1568688499203,
+    "asset": 1568703736517,
+    "meta": 1568703742990,
     "relativePath": "StickHero\\Scripts\\spriteCreator.js"
   },
   "d00790ca-ae20-4d97-af77-8e81121472f2": {
-    "asset": 1568689031131,
-    "meta": 1568689125328,
+    "asset": 1568707718691,
+    "meta": 1568707807545,
     "relativePath": "StickHero\\Scripts\\landMaker.js"
+  },
+  "1bca2533-8e67-4c81-84c3-da0641dfa150": {
+    "asset": 1568709008603,
+    "meta": 1568709008747,
+    "relativePath": "resources\\hero\\tick.png"
+  },
+  "e5423256-4428-404e-a0d3-1f829f1b95b0": {
+    "asset": 1568709022958,
+    "meta": 1568709022965,
+    "relativePath": "resources\\hero\\manTick.png"
   }
 }

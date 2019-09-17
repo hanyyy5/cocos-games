@@ -9,6 +9,7 @@ var perfectLabel = require("perfectLabel");
 var storageManager = require("storageManager");
 var fsm;
 var gameDirector = null;
+var index = 0;
 cc.Class({
     extends: cc.Component,
     properties: {
@@ -50,6 +51,9 @@ cc.Class({
                 onHeroTick: function onHeroTick() {
                     gameDirector.stickLengthen = false;
                     var ani = gameDirector.hero.getComponent(cc.Animation);
+                    console.log("begin tick the stick and output the pos:", gameDirector.hero.x, gameDirector.hero.y);
+                    index++;
+                    console.log("index*********", index);
                     ani.play('heroTick');
                 },
                 onStickFall: function onStickFall() {
@@ -142,6 +146,9 @@ cc.Class({
         var ani = gameDirector.hero.getComponent(cc.Animation);
         ani.on('stop', function (event, target) {
             if (target.name == 'heroTick') {
+                console.log("tick ani stop-------------", gameDirector.hero.x);
+                index++;
+                console.log("index*********", index);
                 fsm.stickFall();
             }
         });
@@ -181,15 +188,17 @@ cc.Class({
         stickAction.easing(cc.easeIn(3));
         this.stick.runAction(stickAction);
         //hero down action;
-        var heroAction = cc.moveBy(0.5, cc.p(0, -300 - this.hero.height));
+        var heroAction = cc.moveBy(0.5, cc.v2(0, -300 - this.hero.height));
         heroAction.easing(cc.easeIn(3));
         var seq = cc.sequence(heroAction, callFunc);
         this.hero.runAction(seq);
     },
     heroMove: function heroMove(target, data) {
         var time = data.length / this.heroMoveSpeed;
-        var heroMove = cc.moveBy(time, cc.p(data.length, 0));
+        console.log("hero move distance is ========================", data.length);
+        var heroMove = cc.moveBy(time, cc.v2(data.length, 0));
         if (data.callFunc) {
+            console.log("this move has data.callFunc============", data.callFunc, data.length);
             var se = cc.sequence(heroMove, data.callFunc);
             this.hero.runAction(se);
         } else {
@@ -201,7 +210,7 @@ cc.Class({
         //firstland;
         var length = this.currentLandRange + this.secondLand.width;
         this.runLength += length;
-        var action = cc.moveBy(this.moveDuration, cc.p(-length, 0));
+        var action = cc.moveBy(this.moveDuration, cc.v2(-length, 0));
         this.node.runAction(action);
         this.firstLand = this.secondLand;
 
@@ -213,7 +222,7 @@ cc.Class({
         //secondland;
         this.secondLand.setPosition(this.runLength + winSize.width, 0);
         var l = winSize.width - range - this.heroWorldPosX - this.hero.width * this.hero.anchorX - this.stickWidth;
-        var secondAction = cc.moveBy(this.moveDuration, cc.p(-l, 0));
+        var secondAction = cc.moveBy(this.moveDuration, cc.v2(-l, 0));
         var seq = cc.sequence(secondAction, callFunc);
         this.secondLand.runAction(seq);
     },
@@ -225,7 +234,7 @@ cc.Class({
     },
     createNewLand: function createNewLand() {
         this.secondLand = spriteCreator.createNewLand(this.getLandWidth());
-        console.log("secondLand", this.secondLand.getComponent(cc.Sprite));
+        // console.log("secondLand", this.secondLand.getComponent(cc.Sprite))
         this.secondLand.parent = this.node;
     },
     getScore: function getScore(num) {
