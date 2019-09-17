@@ -56,8 +56,6 @@ cc.Class({
                     gameDirector.stickLengthen = false;
                     var ani = gameDirector.hero.getComponent(cc.Animation);
                     console.log("begin tick the stick and output the pos:", gameDirector.hero.x, gameDirector.hero.y)
-                    index++
-                    console.log("index*********", index)
                     ani.play('heroTick');
                 },
                 onStickFall(){
@@ -151,8 +149,6 @@ cc.Class({
         ani.on('stop',(event, target)=>{
             if(target.name =='heroTick'){
                 console.log("tick ani stop-------------", gameDirector.hero.x)
-                index++
-                console.log("index*********", index)
                 fsm.stickFall();
             }
         });
