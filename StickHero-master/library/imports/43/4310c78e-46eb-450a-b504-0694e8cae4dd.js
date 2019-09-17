@@ -15,7 +15,6 @@ var spriteCreator = function () {
             var sprite = newLand.addComponent(cc.Sprite);
             sprite.type = cc.Sprite.Type.SLICED;
             sprite.sizeMode = cc.Sprite.SizeMode.CUSTOM;
-            debugger;
             cc.loader.loadRes("hero/land0", cc.SpriteFrame, function (err, SpriteFrame) {
                 sprite.spriteFrame = SpriteFrame;
             });

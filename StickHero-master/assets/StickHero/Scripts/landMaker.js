@@ -114,7 +114,7 @@ cc.Class({
                 onGameOver(){
                     // gameDirector.overLabel.node.active = true;
                     cc.director.preloadScene("GameoverScene", function () {
-                        cc.sys.localStorage.setItem("score",  gameDirector.getScore());
+                        cc.sys.localStorage.setItem("score",  gameDirector.getLastScore());
                         cc.director.loadScene("GameoverScene");
                     }.bind(this));
                 },
@@ -228,7 +228,6 @@ cc.Class({
         return stick
     },
     createNewLand() {
-        debugger
         this.secondLand = spriteCreator.createNewLand(this.getLandWidth());
         console.log("secondLand", this.secondLand.getComponent(cc.Sprite))
         this.secondLand.parent = this.node;
@@ -245,6 +244,9 @@ cc.Class({
         }
         this.scoreLabel.string = this.score;
         return this.score;
+    },
+    getLastScore(){
+        return this.score
     },
     changeHightestScoreLabel(){
         this.hightestScoreLabel.string = "最高分:" + storageManager.getHighestScore();
