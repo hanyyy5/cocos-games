@@ -3,7 +3,7 @@
     "__type__": "cc.Prefab",
     "_name": "bullet",
     "_objFlags": 0,
-    "_rawFiles": null,
+    "_native": "",
     "data": {
       "__id__": 1
     },
@@ -15,44 +15,10 @@
     "__type__": "cc.Node",
     "_name": "bullet",
     "_objFlags": 0,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
     "_parent": null,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 9,
-      "height": 21
-    },
     "_children": [],
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_tag": -1,
-    "_opacityModifyRGB": false,
-    "_id": "",
     "_active": true,
+    "_level": 1,
     "_components": [
       {
         "__id__": 2
@@ -67,7 +33,49 @@
     "_prefab": {
       "__id__": 5
     },
-    "groupIndex": 1
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 30,
+      "height": 31
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 1,
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_id": ""
   },
   {
     "__type__": "cc.Sprite",
@@ -77,11 +85,18 @@
       "__id__": 1
     },
     "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "a39e0e8d-c932-4858-b7cf-c7eb56341d03"
+      "__uuid__": "e00927d4-6ff7-4ae3-aeb6-4f37b39ab8ba"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -91,11 +106,8 @@
     "_fillStart": 0,
     "_fillRange": 0,
     "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": {
-      "__uuid__": "ebb25974-78f8-469f-a4b8-bac08387f220"
-    }
+    "_atlas": null,
+    "_id": ""
   },
   {
     "__type__": "81be82YwS9L1LZYufVXSrCP",
@@ -107,7 +119,8 @@
     "_enabled": true,
     "xSpeed": "0",
     "ySpeed": "1500",
-    "hpDrop": "1"
+    "hpDrop": "1",
+    "_id": ""
   },
   {
     "__type__": "cc.PolygonCollider",
@@ -126,50 +139,31 @@
     "points": [
       {
         "__type__": "cc.Vec2",
-        "x": -4.5,
-        "y": -8.17
+        "x": -16,
+        "y": -1
       },
       {
         "__type__": "cc.Vec2",
-        "x": -4.52,
-        "y": 8.24
+        "x": -5,
+        "y": -18
       },
       {
         "__type__": "cc.Vec2",
-        "x": -4.52,
-        "y": 8.56
+        "x": 14,
+        "y": -11
       },
       {
         "__type__": "cc.Vec2",
-        "x": -1.9,
-        "y": 10.53
+        "x": 15,
+        "y": 10
       },
       {
         "__type__": "cc.Vec2",
-        "x": 1.52,
-        "y": 10.51
-      },
-      {
-        "__type__": "cc.Vec2",
-        "x": 4.56,
-        "y": 7.13
-      },
-      {
-        "__type__": "cc.Vec2",
-        "x": 4.61,
-        "y": -7.62
-      },
-      {
-        "__type__": "cc.Vec2",
-        "x": 1.55,
-        "y": -10.51
-      },
-      {
-        "__type__": "cc.Vec2",
-        "x": -1.7,
-        "y": -10.57
+        "x": -9,
+        "y": 17
       }
-    ]
+    ],
+    "_id": ""
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -179,6 +173,7 @@
     "asset": {
       "__uuid__": "118d421e-4ff4-4fbe-9476-152d513c66d6"
     },
-    "fileId": "5578fAI15hCbJ12gl5b1hXn"
+    "fileId": "5578fAI15hCbJ12gl5b1hXn",
+    "sync": false
   }
 ]

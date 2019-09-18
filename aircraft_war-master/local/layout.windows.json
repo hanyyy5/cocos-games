@@ -1,15 +1,14 @@
 {
   "version": "1.1.1",
   "windows": {
-    "worker": {},
     "main": {
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 0,
-      "y": 0,
-      "width": 1536,
-      "height": 827,
+      "x": 36,
+      "y": 46,
+      "width": 1468,
+      "height": 758,
       "layout": {
         "children": [
           {
@@ -19,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 354.6000061035156,
+                "height": 226.1374969482422,
                 "type": "panel",
-                "width": 248.0625
+                "width": 355.8500061035156
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 354.6000061035156,
+                "height": 414.26251220703125,
                 "type": "panel",
-                "width": 248.0625
+                "width": 355.8500061035156
               }
             ],
-            "height": 711.2000122070312,
+            "height": 642.4000244140625,
             "type": "dock-v",
-            "width": 248.0625
+            "width": 355.8500061035156
           },
           {
             "children": [
@@ -46,39 +45,39 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 432.125,
+                    "height": 372.6499938964844,
                     "type": "panel",
-                    "width": 645.1625366210938
+                    "width": 237.52500915527344
                   },
                   {
                     "active": 0,
                     "children": [
                       "node-library"
                     ],
-                    "height": 432.125,
+                    "height": 372.6499938964844,
                     "type": "panel",
-                    "width": 265.07501220703125
+                    "width": 264.4750061035156
                   }
                 ],
-                "height": 432.125,
+                "height": 372.6499938964844,
                 "type": "dock-h",
-                "width": 912.2374877929688
+                "width": 504
               },
               {
-                "active": 0,
+                "active": 1,
                 "children": [
                   "console",
                   "timeline",
                   "game-window"
                 ],
-                "height": 277.07501220703125,
+                "height": 267.75,
                 "type": "panel",
-                "width": 912.2374877929688
+                "width": 504
               }
             ],
-            "height": 711.2000122070312,
+            "height": 642.4000244140625,
             "type": "dock-v",
-            "width": 912.2374877929688
+            "width": 504
           },
           {
             "active": 0,
@@ -86,9 +85,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 711.2000122070312,
+            "height": 642.4000244140625,
             "type": "panel",
-            "width": 358.0874938964844
+            "width": 589.75
           }
         ],
         "type": "dock-h"
@@ -106,5 +105,12 @@
       ]
     }
   },
-  "panels": {}
+  "panels": {
+    "sprite-editor": {
+      "x": 508,
+      "y": 132,
+      "width": 516,
+      "height": 538
+    }
+  }
 }

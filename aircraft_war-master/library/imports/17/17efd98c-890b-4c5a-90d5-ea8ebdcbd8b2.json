@@ -2,8 +2,8 @@
   "__type__": "cc.AnimationClip",
   "_name": "enemy1ani",
   "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.5166666666666667,
+  "_native": "",
+  "_duration": 0.5333333333333333,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -33,6 +33,12 @@
             "frame": 0.5,
             "value": {
               "__uuid__": "5fb87426-3d6f-42b0-a3ad-8d966b9a438f"
+            }
+          },
+          {
+            "frame": 0.5166666666666667,
+            "value": {
+              "__uuid__": "500ede02-20d2-4571-9771-57cc2d5b43c8"
             }
           }
         ]

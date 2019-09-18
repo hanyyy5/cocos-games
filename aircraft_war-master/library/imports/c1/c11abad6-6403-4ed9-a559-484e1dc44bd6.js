@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'c11abrWZANO2aVZSE4dxEvW', 'historyScore');
-// Script/historyScore.js
+cc._RF.push(module, 'c11abrWZANO2aVZSE4dxEvW', 'old_historyScore');
+// Script/old_historyScore.js
 
 'use strict';
 

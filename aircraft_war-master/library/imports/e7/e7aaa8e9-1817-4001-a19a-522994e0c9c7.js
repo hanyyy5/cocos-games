@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'e7aaajpGBdAAaGaUimU4MnH', 'scoreItemTemplate');
-// Script/scoreItemTemplate.js
+cc._RF.push(module, 'e7aaajpGBdAAaGaUimU4MnH', 'old_scoreItemTemplate');
+// Script/old_scoreItemTemplate.js
 
 'use strict';
 

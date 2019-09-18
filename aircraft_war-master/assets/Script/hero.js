@@ -27,7 +27,6 @@ cc.Class({
         this.eState = D.commonInfo.gameState.none;
         cc.director.getCollisionManager().enabled=true;
         this.onDrag();
-        
     },
 
     //添加拖动监听

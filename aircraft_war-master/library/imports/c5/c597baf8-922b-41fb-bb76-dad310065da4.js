@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'c597br4kitB+7t22tMQBl2k', 'end');
-// Script/end.js
+cc._RF.push(module, 'c597br4kitB+7t22tMQBl2k', 'old_end');
+// Script/old_end.js
 
 'use strict';
 

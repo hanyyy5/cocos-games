@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, '280c3rsZJJKnZ9RqbALVwtK', 'start');
-// Script/start.js
+cc._RF.push(module, '280c3rsZJJKnZ9RqbALVwtK', 'old_start');
+// Script/old_start.js
 
 'use strict';
 
