@@ -34,7 +34,7 @@ cc.Class({
             default: null,
         },
         loginButton: {
-            type: cc.Button,
+            type: cc.Node,
             default: null,
         },
         worldSceneBGM:{
@@ -52,23 +52,35 @@ cc.Class({
     start () {
 
     },
+    onLoad: function () {
+        cc.director.preloadScene("Game");
+        var scaleTo = cc.scaleTo(0.8,0.9);
+        var reverse = cc.scaleTo(0.8,1);
+        var seq = cc.sequence(scaleTo,reverse);
+        var repeat = cc.repeatForever(seq);
+        this.loginButton.runAction(repeat);
+        this.loginButton.on("touchstart",function(){
+             cc.director.loadScene("Game");
+        });
 
-    onLogin: function(){
-        this.loadingBar.node.active = true;
-        this.loginButton.node.active = false;
-        this.loadingBar.progress = 0;
-        let backup = cc.loader.onProgress;
-        cc.loader.onProgress = function (count, amount) {
-            this.loadingBar.progress = count / amount;
-        }.bind(this);
-
-        cc.director.preloadScene("Game", function () {
-            cc.loader.onProgress = backup;
-            this.loadingBar.node.active = false;
-            this.loginButton.node.active = true;
-            cc.director.loadScene("Game");
-        }.bind(this));
     },
+
+    // onLogin: function(){
+    //     this.loadingBar.node.active = true;
+    //     this.loginButton.node.active = false;
+    //     this.loadingBar.progress = 0;
+    //     let backup = cc.loader.onProgress;
+    //     cc.loader.onProgress = function (count, amount) {
+    //         this.loadingBar.progress = count / amount;
+    //     }.bind(this);
+
+    //     cc.director.preloadScene("Game", function () {
+    //         cc.loader.onProgress = backup;
+    //         this.loadingBar.node.active = false;
+    //         this.loginButton.node.active = true;
+    //         cc.director.loadScene("Game");
+    //     }.bind(this));
+    // },
 
     onDestroy: function(){
         cc.audioEngine.stop(this.gameSceneBGMAudioId);
