@@ -1,0 +1,61 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "playerFly",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.21666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "56566bee-3aad-46fc-b7a4-c21847f2d3c2"
+            }
+          },
+          {
+            "frame": 0.03333333333333333,
+            "value": {
+              "__uuid__": "47e4c26b-5da3-4199-b0f2-229a2951fd54"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "56566bee-3aad-46fc-b7a4-c21847f2d3c2"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "f301770b-15c4-4583-ae49-e9f54ce7301d"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "e3ff77bc-a862-4f58-8d83-9b94dd96cd3a"
+            }
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": {
+              "__uuid__": "f301770b-15c4-4583-ae49-e9f54ce7301d"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "a57b34fa-b911-4f3e-aede-7131cd640e24"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

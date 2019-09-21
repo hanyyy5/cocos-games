@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dart",
+    "texture": "aaeddc0f-f608-43d8-aa42-fa3c015b8034",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      30,
+      31
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      30,
+      31
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

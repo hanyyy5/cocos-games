@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "middleKite",
+    "texture": "7c4014e6-4613-4358-912e-5a66f28c7ce8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      176,
+      186
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      176,
+      186
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

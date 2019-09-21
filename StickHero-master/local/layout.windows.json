@@ -46,7 +46,7 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 442.38751220703125,
+                    "height": 442.25,
                     "type": "panel",
                     "width": 443.8125
                   },
@@ -55,12 +55,12 @@
                     "children": [
                       "node-library"
                     ],
-                    "height": 442.38751220703125,
+                    "height": 442.25,
                     "type": "panel",
                     "width": 267.88751220703125
                   }
                 ],
-                "height": 442.38751220703125,
+                "height": 442.25,
                 "type": "dock-h",
                 "width": 713.7125244140625
               },
@@ -71,7 +71,7 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 266,
+                "height": 266.1499938964844,
                 "type": "panel",
                 "width": 713.7125244140625
               }
