@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bigKite4",
+    "texture": "a356422c-1123-433a-82b6-8fa533462202",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      460,
+      589
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      460,
+      589
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

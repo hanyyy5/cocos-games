@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "middleBoom",
+    "texture": "3aa44fb3-daf8-4808-abb0-eaefd2194d5c",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      100,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      69
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

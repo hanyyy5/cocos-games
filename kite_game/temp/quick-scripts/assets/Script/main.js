@@ -58,7 +58,7 @@ cc.Class({
 
         this.enemyGroup.startAction();
         this.bulletGroup.startAction();
-        this.ufoGroup.startAction();
+        // this.ufoGroup.startAction();
         this.bomb.on('touchstart', this.bombOnclick, this);
         this.gameMusic.play();
     },
@@ -96,7 +96,7 @@ cc.Class({
     resumeAction: function resumeAction() {
         this.enemyGroup.resumeAction();
         this.bulletGroup.resumeAction();
-        this.ufoGroup.resumeAction();
+        // this.ufoGroup.resumeAction();
         this.hero.onDrag();
         this.gameMusic.resume();
         this.pause.normalSprite = this.btnSprite[0];
@@ -109,7 +109,7 @@ cc.Class({
         this.bulletGroup.pauseAction();
         this.hero.offDrag();
         this.gameMusic.pause();
-        this.ufoGroup.pauseAction();
+        // this.ufoGroup.pauseAction();
         this.pause.normalSprite = this.btnSprite[2];
         this.pause.pressedSprite = this.btnSprite[3];
         this.pause.hoverSprite = this.btnSprite[3];

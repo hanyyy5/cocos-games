@@ -49,8 +49,9 @@ cc.Class({
         var locationv = event.getLocation();
         var location = this.node.parent.convertToNodeSpaceAR(locationv);
         //飞机不移出屏幕 
-        var minX = -this.node.parent.width / 2 + this.node.width / 2;
-        var maxX = -minX;
+        // var minX = -this.node.parent.width/2+this.node.width/2;
+        var minX = -this.node.parent.width / 2;
+        var maxX = -minX - this.node.width / 2;
         var minY = -this.node.parent.height / 2 + this.node.height / 2;
         var maxY = -minY;
         if (location.x < minX) {

@@ -3,7 +3,7 @@
   "_name": "enemy3ani",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.85,
+  "_duration": 0.6833333333333333,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -20,31 +20,25 @@
           {
             "frame": 0.16666666666666666,
             "value": {
-              "__uuid__": "5476395a-8bc5-4aa1-991a-60752acb9bfa"
+              "__uuid__": "cbbfe413-47f2-44d5-9aa7-5157af940f94"
             }
           },
           {
             "frame": 0.3333333333333333,
             "value": {
-              "__uuid__": "a3eaf3c0-7da2-4a52-951f-317c7cb418e5"
+              "__uuid__": "b366caf6-cfbe-4bf3-8d1a-d80476c1d08c"
             }
           },
           {
             "frame": 0.5,
             "value": {
-              "__uuid__": "cb4a5430-be95-4feb-b6ec-edcdaa814343"
+              "__uuid__": "2d3ffc5b-e4b6-45ff-b9de-e87d55e126bd"
             }
           },
           {
             "frame": 0.6666666666666666,
             "value": {
-              "__uuid__": "f3b7ba7b-d000-421b-b83f-0d5b4e656f44"
-            }
-          },
-          {
-            "frame": 0.8333333333333334,
-            "value": {
-              "__uuid__": "de446ff8-25ca-4363-9139-bc11f4190a3a"
+              "__uuid__": "8cdac7ca-2f8d-4937-be0a-b13ed192c42d"
             }
           }
         ]
