@@ -86,6 +86,12 @@ cc.Class({
                     var ani = gameDirector.hero.getComponent(cc.Animation);
                     var callFunc = cc.callFunc(function(){
                         ani.stop('heroRun');
+                          
+                        var sprite =  gameDirector.hero.getComponent(cc.Sprite);
+                        cc.loader.loadRes("hero/man", cc.SpriteFrame, (err, SpriteFrame) => {
+                            sprite.spriteFrame = SpriteFrame;
+                        });
+                        
                         gameDirector.getScore();
                         fsm.landMove();
                     });
@@ -102,6 +108,12 @@ cc.Class({
                     var ani = gameDirector.hero.getComponent(cc.Animation);
                     var callFunc = cc.callFunc(function(){
                         ani.stop('heroRun');
+
+                        var sprite =  gameDirector.hero.getComponent(cc.Sprite);
+                        cc.loader.loadRes("hero/man", cc.SpriteFrame, (err, SpriteFrame) => {
+                            sprite.spriteFrame = SpriteFrame;
+                        });
+
                         fsm.heroDown();
                     });
                     ani.play('heroRun');

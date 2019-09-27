@@ -1,22 +1,22 @@
 {
   "__type__": "cc.SpriteFrame",
   "content": {
-    "name": "manTick",
-    "texture": "e5423256-4428-404e-a0d3-1f829f1b95b0",
+    "name": "man3",
+    "texture": "820af88b-272c-4ea2-8016-b1dfd70247a0",
     "atlas": "",
     "rect": [
       0,
       0,
-      57,
-      90
+      54,
+      88
     ],
     "offset": [
       0,
       0
     ],
     "originalSize": [
-      57,
-      90
+      54,
+      88
     ],
     "capInsets": [
       0,
