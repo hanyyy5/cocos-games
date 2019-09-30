@@ -36,6 +36,7 @@ cc.Class({
             animation.stop();
         } 
         else{
+            debugger
             animation.play(model.status);
         }
     },
