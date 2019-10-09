@@ -47,11 +47,12 @@ cc.Class({
             let callFunc = cc.callFunc(function(){
                 let instantEffect = null;
                 let animation = null;
+                console.log('每一个动画信息====',cmd);
                 if(cmd.action == "crush"){
                     instantEffect = cc.instantiate(this.crushEffect);
                     animation  = instantEffect.getComponent(cc.Animation);
                     animation.play("effect");
-                    this.gainScore();
+                    this.gainScore(1);
                     !soundMap["crush" + cmd.playTime] && this.audioUtils.playEliminate(cmd.step);
                     soundMap["crush" + cmd.playTime] = true;
                 }
@@ -59,13 +60,13 @@ cc.Class({
                     instantEffect = cc.instantiate(this.bombWhite);
                     animation  = instantEffect.getComponent(cc.Animation);
                     animation.play("effect_line");
-                    this.gainScore();
+                    this.gainScore(1);
                 }
                 else if(cmd.action == "colBomb"){
                     instantEffect = cc.instantiate(this.bombWhite);
                     animation  = instantEffect.getComponent(cc.Animation);
                     animation.play("effect_col");
-                    this.gainScore();
+                    this.gainScore(1);
                 }
 
                 instantEffect.x = CELL_WIDTH * (cmd.pos.x - 0.5);
@@ -79,8 +80,8 @@ cc.Class({
             this.node.runAction(cc.sequence(delayTime, callFunc));
         },this);
     },
-    gainScore: function () {
-        this.scoreCount += 1;
+    gainScore: function (num) {
+        this.scoreCount += num;
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = this.scoreCount;
         return this.scoreCount;
