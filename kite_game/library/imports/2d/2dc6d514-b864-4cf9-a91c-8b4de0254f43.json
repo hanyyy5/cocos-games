@@ -124,7 +124,7 @@
     "xMaxSpeed": 0,
     "yMinSpeed": -50,
     "yMaxSpeed": -50,
-    "initHP": 16,
+    "initHP": 48,
     "initSpriteFrame": {
       "__uuid__": "a6673a4c-2636-4179-b707-30f50a993d0c"
     },
