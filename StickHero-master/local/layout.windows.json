@@ -9,7 +9,7 @@
       "x": 0,
       "y": 0,
       "width": 1536,
-      "height": 828,
+      "height": 827,
       "layout": {
         "children": [
           {
@@ -46,7 +46,7 @@
                     "children": [
                       "scene"
                     ],
-                    "height": 442.3999938964844,
+                    "height": 442.25,
                     "type": "panel",
                     "width": 640.1625366210938
                   },
@@ -55,12 +55,12 @@
                     "children": [
                       "node-library"
                     ],
-                    "height": 442.3999938964844,
+                    "height": 442.25,
                     "type": "panel",
                     "width": 264.07501220703125
                   }
                 ],
-                "height": 442.3999938964844,
+                "height": 442.25,
                 "type": "dock-h",
                 "width": 906.2374877929688
               },
@@ -71,7 +71,7 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 266,
+                "height": 266.1499938964844,
                 "type": "panel",
                 "width": 906.2374877929688
               }
