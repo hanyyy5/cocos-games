@@ -63,7 +63,6 @@ cc.Class({
                 return true;
             }
             var touchPos = eventTouch.getLocation();
-            // debugger
             var cellPos = this.convertTouchPosToCell(touchPos);
             if(cellPos){
                 var changeModels = this.selectCell(cellPos);
